@@ -22,6 +22,6 @@ dog = Dog("Bobik", height=32)
 print(dog)
 
 dog.eat()
-print(gjyznyj)
+
 
 
