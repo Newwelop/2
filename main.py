@@ -1,34 +1,26 @@
-class Student:
-    count = 0
+class Dog:
 
-    def __init__(self, name="No name", height= 160):
+
+    def __init__(self, name="No name", height=100):
         self.height = height
         self.name = name
-        Student.count += 1
+        self.meals_eaten = 3
+
 
     def __str__(self):
-        return f"Я студент {self.name} см.\nМій зріст {self.height}.см"
+        return f"Я собака мое имя {self.name}.\nМой рост {self.height} см."
 
-    def __del__(self):
-        print("я пішов....")
-
-
-
-
-
-
-print(Student.count)
-student = Student("Pavel", height= 170)
-print(student)
+    def eat(self):
+        self.meals_eaten -= 1
+        print(f"{self.name} поел . Всего {self.meals_eaten} разa.")
 
 
 
 
 
-student = Student()
-student1 = Student(height= 170)
-student2 = Student(height= 150)
-print(student.height)
-print(student1.height)
-print(student2.height)
-print(student2.count)
+dog = Dog("Bobik", height=32)
+print(dog)
+
+dog.eat()
+
+
